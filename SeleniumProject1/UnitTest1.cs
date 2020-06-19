@@ -5,6 +5,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
+//using OpenQA.Selenium.Support.UI;
+//using static SeleniumExtras.WaitHelpers.ExpectedConditions;
+using  ExpectedConditions =  SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 
 namespace SeleniumProject1
@@ -49,6 +52,9 @@ namespace SeleniumProject1
                 return d.FindElement(By.Id("ctl00_ProductLookupTextBox_inputTextBox"));
             });
             Assert.IsTrue(productSKU.Displayed);
+            productSKU.SendKeys("IN-SCWEL319");
+            var productSearchBtn = wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("ctl00_ProductSearchButton")));
+            productSearchBtn.Click();
         }
 
         private IWebDriver GetChromeDriver()

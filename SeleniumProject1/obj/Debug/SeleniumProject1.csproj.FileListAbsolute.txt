@@ -11,9 +11,10 @@ C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\bin\Debug\Micros
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\bin\Debug\WebDriver.xml
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\bin\Debug\WebDriver.Support.xml
-C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\obj\Debug\SeleniumProject1.csprojAssemblyReference.cache
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\obj\Debug\SeleniumProject1.csproj.CoreCompileInputs.cache
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\obj\Debug\SeleniumProject1.csproj.CopyComplete
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\obj\Debug\SeleniumProject1.dll
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\obj\Debug\SeleniumProject1.pdb
 C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\bin\Debug\chromedriver.exe
+C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\dh001mi\source\repos\SeleniumProject1\SeleniumProject1\obj\Debug\SeleniumProject1.csprojAssemblyReference.cache
