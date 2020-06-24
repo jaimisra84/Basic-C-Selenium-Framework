@@ -7,11 +7,12 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 //using OpenQA.Selenium.Support.UI;
 //using static SeleniumExtras.WaitHelpers.ExpectedConditions;
-using  ExpectedConditions =  SeleniumExtras.WaitHelpers.ExpectedConditions;
+using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 
 namespace SeleniumProject1
 {
+
     [TestClass]
     public class UnitTest1
     {
