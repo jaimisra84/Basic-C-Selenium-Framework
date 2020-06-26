@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumProject1", "SeleniumProject1\SeleniumProject1.csproj", "{047EF6A9-DC05-47DE-9DAD-0E03FDB9C9A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationFramework1", "AutomationFramework1\AutomationFramework1.csproj", "{B71B39D1-EEB4-4D68-A678-B4E0F676F453}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{047EF6A9-DC05-47DE-9DAD-0E03FDB9C9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{047EF6A9-DC05-47DE-9DAD-0E03FDB9C9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{047EF6A9-DC05-47DE-9DAD-0E03FDB9C9A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71B39D1-EEB4-4D68-A678-B4E0F676F453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71B39D1-EEB4-4D68-A678-B4E0F676F453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71B39D1-EEB4-4D68-A678-B4E0F676F453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71B39D1-EEB4-4D68-A678-B4E0F676F453}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
