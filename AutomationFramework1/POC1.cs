@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using AutomationResources;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -14,29 +15,48 @@ namespace AutomationFramework1
         private IWebDriver Driver { get; set; }
 
         [TestMethod]
+        [TestProperty("Author","DHANANJAI")]
+        [Description("This test validates the LOGIN functionality")]
         public void LoginTest1()
-        {
-            Driver = GetChromeDriver();
+        {           
             var loginPage = new LoginPage(Driver);
             loginPage.Goto();
-            Assert.IsTrue(loginPage.IsVisible,"Not able to validate the title of the LOGIN PAGE");
-            var homePage = loginPage.Login("devbadge");
 
-            //var homePage = new HomePage(Driver);
+            var homePage = loginPage.Login("devbadge");
             System.Threading.Thread.Sleep(10000);
-            Assert.IsTrue(homePage.IsVisible,"Not able to validate the title of the HOME PAGE");
+            Assert.IsTrue(homePage.IsVisible, "Not able to validate the title of the HOME PAGE");
         }
-        private IWebDriver GetChromeDriver()
+        [TestMethod]
+        [TestProperty("Author", "DHANANJAI")]
+        [Description("This test validates the navigation functionality till the PRODUCT DETAILS PAGE")]
+        public void LoginTest2()
         {
-            var outputDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            return new ChromeDriver(outputDir);
+            //Driver = GetChromeDriver();
+            var loginPage = new LoginPage(Driver);
+            loginPage.Goto();
+
+            var homePage = loginPage.Login("devbadge");
+            System.Threading.Thread.Sleep(10000);
+            Assert.IsTrue(homePage.IsVisible, "Not able to validate the title of the HOME PAGE");
+
+            var productPage = homePage.SearchProduct("1886397");
+            System.Threading.Thread.Sleep(10000);
+            Assert.IsTrue(productPage.IsVisible, "Not able to validate the title of the PRODUCT PAGE");
+        }
+
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            var factory = new WebDriverFactory();
+            Driver = factory.Create(BrowserType.CHROME);
         }
 
         [TestCleanup]
-        public void CleanUp()
+        public void TestCleanUp()
         {
             Driver.Close();
             Driver.Quit();
         }
+
     }
 }

@@ -1,13 +1,13 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using System;
 
 namespace AutomationFramework1
 {
     internal class LoginPage : BasePage
     {
-
-        public LoginPage(IWebDriver driver) : base(driver){}
-
+        public IWebElement SecureIDTesxtBox => Driver.FindElement(By.Id("SecureIDTextBox"));
+        public bool IsVisible => Driver.Title.Equals(PageTitle);
         /*public bool IsVisible { 
             get 
             {
@@ -15,18 +15,19 @@ namespace AutomationFramework1
             }
             internal set { }
         }*/
-        public bool IsVisible => Driver.Title.Equals("Newgistics WMS :: Login");
+        private string PageTitle => "Newgistics WMS :: Login";
 
-        public IWebElement SecureIDTesxtBox => Driver.FindElement(By.Id("SecureIDTextBox"));
+        public LoginPage(IWebDriver driver) : base(driver){}
 
         internal void Goto()
         {
             Driver.Navigate().GoToUrl("http://internal.qa1fxwebas1.newgistics.com/");
+            Assert.IsTrue(IsVisible, "Not able to validate the title of the LOGIN PAGE");
         }
 
-        internal HomePage Login(string username)
+        internal HomePage Login(string userName)
         {
-            SecureIDTesxtBox.SendKeys(username);
+            SecureIDTesxtBox.SendKeys(userName);
             SecureIDTesxtBox.Submit();
             return new HomePage(Driver);
         }
