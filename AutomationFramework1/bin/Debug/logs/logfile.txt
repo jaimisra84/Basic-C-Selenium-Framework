@@ -1,0 +1,7 @@
+2020-07-02 14:13:35.9109 AutomationFramework1.Pages.LoginPage Opening the URL: http://internal.qa1fxwebas1.newgistics.com/
+2020-07-02 14:13:46.5856 AutomationFramework1.Pages.LoginPage Entering the username: devbadge and clicking on submit
+2020-07-02 15:17:40.1833 13 AutomationFramework1.Pages.LoginPage.Goto INFO AutomationFramework1.Pages.LoginPage Opening the URL: http://internal.qa1fxwebas1.newgistics.com/ 
+2020-07-02 15:17:50.9021 13 AutomationFramework1.Pages.LoginPage.Login INFO AutomationFramework1.Pages.LoginPage Entering the username: devbadge and clicking on submit 
+2020-07-02 15:18:08.1487 13 AutomationFramework1.Pages.LoginPage.Goto INFO AutomationFramework1.Pages.LoginPage Opening the URL: http://internal.qa1fxwebas1.newgistics.com/ 
+2020-07-02 15:18:18.6646 13 AutomationFramework1.Pages.LoginPage.Login INFO AutomationFramework1.Pages.LoginPage Entering the username: devbadge and clicking on submit 
+2020-07-02 15:18:28.8169 13 AutomationFramework1.Pages.HomePage.SearchProduct INFO AutomationFramework1.Pages.HomePage Searching the product: 1886397 

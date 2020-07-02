@@ -19,3 +19,6 @@ C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\Au
 C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\WebDriver.Support.dll
 C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\AutomationResources.pdb
 C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\WebDriver.Support.xml
+C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\NLog.config
+C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\NLog.dll
+C:\Users\dh001mi\source\repos\SeleniumProject1\AutomationFramework1\bin\Debug\NLog.xml
