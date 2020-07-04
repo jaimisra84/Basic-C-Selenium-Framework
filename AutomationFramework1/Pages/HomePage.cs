@@ -20,6 +20,7 @@ namespace AutomationFramework1.Pages
             ProductSearchTesxtBox.SendKeys(productID);
             ProductSearchButton.Click();
             log.Info($"Searching the product: {productID}");
+            Reporter.LogPassingTestStep($"Searching the product: {productID}");
             return new ProductPage(Driver);
         }
     }

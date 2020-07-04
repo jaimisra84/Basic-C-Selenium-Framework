@@ -15,7 +15,7 @@ namespace AutomationFramework1
             var loginPage = new LoginPage(Driver);
             loginPage.Goto();
 
-            var homePage = loginPage.Login("devbadge");
+            var homePage = loginPage.Login("de");
             System.Threading.Thread.Sleep(10000);
             Assert.IsTrue(homePage.IsVisible, "Not able to validate the title of the HOME PAGE");
         }

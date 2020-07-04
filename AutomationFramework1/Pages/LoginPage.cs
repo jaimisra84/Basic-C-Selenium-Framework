@@ -27,6 +27,7 @@ namespace AutomationFramework1.Pages
             Driver.Navigate().GoToUrl(url);
             Assert.IsTrue(IsVisible, "Not able to validate the title of the LOGIN PAGE");
             log.Info($"Opening the URL: {url}");
+            Reporter.LogPassingTestStep($"Opening the URL: {url}");
         }
 
         internal HomePage Login(string userName)
@@ -34,6 +35,7 @@ namespace AutomationFramework1.Pages
             SecureIDTesxtBox.SendKeys(userName);
             SecureIDTesxtBox.Submit();
             log.Info($"Entering the username: {userName} and clicking on submit");
+            Reporter.LogPassingTestStep($"Entering the username: {userName} and clicking on submit");
             return new HomePage(Driver);
         }
     }
